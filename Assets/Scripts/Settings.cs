@@ -12,27 +12,12 @@ public class Settings : ScriptableObject
     [SerializeField]
     public int[] farmsIncome;
     
-    public int FarmsBuildCount
-    {
-        get
-        {
-            return farmsBuildCount;
-        }
-    }
-    
-    public int[] FarmsIncome
-    {
-        get
-        {
-            return farmsIncome;
-        }
-    }
+    public int FarmsBuildCount => farmsBuildCount;
 
-    public int GoldIncome
-    {
-        get
-        {
-            return goldIncome;
-        }
-    }
+    
+    public int[] FarmsIncome => farmsIncome;
+
+
+    public int GoldIncome => goldIncome;
+
 }

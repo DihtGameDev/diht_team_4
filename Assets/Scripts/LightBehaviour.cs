@@ -7,6 +7,9 @@ public class LightBehaviour : MonoBehaviour
     private int ticks = 0;
     private int prev_sec = 0;
     
+    [SerializeField]
+    private Light lt = GetComponent<Light>
+    
     // Start is called before the first frame update
     void Start () {
         Debug.Log("I am light and I am alive!");
@@ -16,7 +19,6 @@ public class LightBehaviour : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Light lt = GetComponent<Light>();
         ticks += 1;
         int sec = ticks / 200;
         if (sec < 10 && sec > prev_sec)
