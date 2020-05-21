@@ -6,9 +6,8 @@ public class LightBehaviour : MonoBehaviour
 {
     private int ticks = 0;
     private int prev_sec = 0;
-    
-    [SerializeField]
-    private Light lt = GetComponent<Light>
+
+    [SerializeField] public Light lt;
     
     // Start is called before the first frame update
     void Start () {
